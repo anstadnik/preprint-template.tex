@@ -48,46 +48,46 @@
 \titlespacing\subsection{0pt}{10pt plus 3pt minus 3pt}{1pt plus 1pt minus 1pt}
 \titlespacing\subsubsection{0pt}{8pt plus 3pt minus 3pt}{1pt plus 1pt minus 1pt}
 
-% ORCiD insertion
-\usepackage{tikz,xcolor,hyperref}
+% % ORCiD insertion
+% \usepackage{tikz,xcolor,hyperref}
 
-\definecolor{lime}{HTML}{A6CE39}
-\DeclareRobustCommand{\orcidicon}{
-	\begin{tikzpicture}
-	\draw[lime, fill=lime] (0,0) 
-	circle [radius=0.16] 
-	node[white] {{\fontfamily{qag}\selectfont \tiny ID}};
-	\draw[white, fill=white] (-0.0625,0.095) 
-	circle [radius=0.007];
-	\end{tikzpicture}
-	\hspace{-2mm}
-}
-\foreach \x in {A, ..., Z}{\expandafter\xdef\csname orcid\x\endcsname{\noexpand\href{https://orcid.org/\csname orcidauthor\x\endcsname}
-			{\noexpand\orcidicon}}
-}
-% Define the ORCID iD command for each author separately. Here done for two authors.
-\newcommand{\orcidauthorA}{0000-0000-0000-0001}
-\newcommand{\orcidauthorB}{0000-0000-0000-0002}
-\newcommand{\orcidauthorC}{0000-0000-0000-0003}
-\newcommand{\orcidauthorD}{0000-0000-0000-0004}
+% \definecolor{lime}{HTML}{A6CE39}
+% \DeclareRobustCommand{\orcidicon}{
+% 	\begin{tikzpicture}
+% 	\draw[lime, fill=lime] (0,0) 
+% 	circle [radius=0.16] 
+% 	node[white] {{\fontfamily{qag}\selectfont \tiny ID}};
+% 	\draw[white, fill=white] (-0.0625,0.095) 
+% 	circle [radius=0.007];
+% 	\end{tikzpicture}
+% 	\hspace{-2mm}
+% }
+% \foreach \x in {A, ..., Z}{\expandafter\xdef\csname orcid\x\endcsname{\noexpand\href{https://orcid.org/\csname orcidauthor\x\endcsname}
+% 			{\noexpand\orcidicon}}
+% }
+% % Define the ORCID iD command for each author separately. Here done for two authors.
+% \newcommand{\orcidauthorA}{0000-0000-0000-0001}
+% \newcommand{\orcidauthorB}{0000-0000-0000-0002}
+% \newcommand{\orcidauthorC}{0000-0000-0000-0003}
+% \newcommand{\orcidauthorD}{0000-0000-0000-0004}
 
 %%%%%%%%%%%%%%%%   Title   %%%%%%%%%%%%%%%%
 \title{A preprint template for LaTeX users}
 
-% Add watermark with submission status
-\usepackage{xwatermark}
-% Left watermark
-\newwatermark[firstpage,color=gray!60,angle=90,scale=0.32, xpos=-4.05in,ypos=0]{\href{https://doi.org/}{\color{gray}{Publication doi}}}
-% Right watermark
-\newwatermark[firstpage,color=gray!60,angle=90,scale=0.32, xpos=3.9in,ypos=0]{\href{https://doi.org/}{\color{gray}{Preprint doi}}}
-% Bottom watermark
-\newwatermark[firstpage,color=gray!90,angle=0,scale=0.28, xpos=0in,ypos=-5in]{*correspondence: \texttt{email@institution.edu}}
+% % Add watermark with submission status
+% \usepackage{xwatermark}
+% % Left watermark
+% \newwatermark[firstpage,color=gray!60,angle=90,scale=0.32, xpos=-4.05in,ypos=0]{\href{https://doi.org/}{\color{gray}{Publication doi}}}
+% % Right watermark
+% \newwatermark[firstpage,color=gray!60,angle=90,scale=0.32, xpos=3.9in,ypos=0]{\href{https://doi.org/}{\color{gray}{Preprint doi}}}
+% % Bottom watermark
+% \newwatermark[firstpage,color=gray!90,angle=0,scale=0.28, xpos=0in,ypos=-5in]{*correspondence: \texttt{email@institution.edu}}
 
-%%%%%%%%%%%%%%%  Author list  %%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%  Author list  %%%%%%%%%%%%%%%
 \usepackage{authblk}
 \renewcommand*{\Authfont}{\bfseries}
-\author[1\thanks{\tt{asmith@college.edu}}]{Alice Smith\orcidA{}}
-\author[2]{Bob Jones\orcidB{}}
+\author[1\thanks{\tt{asmith@college.edu}}]{Alice Smith}
+\author[2]{Bob Jones}
 
 \affil[1]{Department of Mathematics, University X}
 \affil[2]{Department of Biology, University Y}
@@ -121,11 +121,11 @@
 
 \twocolumn[ % Method A for two-column formatting
   \begin{@twocolumnfalse} % Method A for two-column formatting
-  
+ 
 \maketitle
 
 \begin{abstract}
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris. Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula augue eu neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris ut leo. Cras viverra metus rhoncus sem. Nulla et lectus vestibulum urna fringilla ultrices. Phasellus eu tellus sit amet tortor gravida placerat. Integer sapien est, iaculis in, pretium quis, viverra ac, nunc. Praesent eget sem vel leo ultrices bibendum. Aenean faucibus. Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla. Curabitur auctor semper nulla. Donec varius orci eget risus. Duis nibh mi, congue eu, accumsan eleifend, sagittis quis, diam. Duis eget orci sit amet orci dignissim rutrum. Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor lorem non justo. 
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris. Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula augue eu neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris ut leo. Cras viverra metus rhoncus sem. Nulla et lectus vestibulum urna fringilla ultrices. Phasellus eu tellus sit amet tortor gravida placerat. Integer sapien est, iaculis in, pretium quis, viverra ac, nunc. Praesent eget sem vel leo ultrices bibendum. Aenean faucibus. Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla. Curabitur auctor semper nulla. Donec varius orci eget risus. Duis nibh mi, congue eu, accumsan eleifend, sagittis quis, diam. Duis eget orci sit amet orci dignissim rutrum. Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor lorem non justo.
 \end{abstract}
 %\keywords{First keyword \and Second keyword \and More} % (optional)
 \vspace{0.35cm}
